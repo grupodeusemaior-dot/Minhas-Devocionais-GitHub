@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#243b70">
+  <meta name="description" content="Minhas Devocionais - Renova-me Deus Meu">
+
+  <!-- Compatibilidade com dispositivos móveis -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Minhas Devocionais">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+  <title>Minhas Devocionais</title>
+
+  <!-- Instalação PWA -->
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <header class="topo">
+
+    <div class="marca">
+      <img
+        src="./icons/icon-192.png"
+        alt="Renova-me Deus Meu"
+        width="76"
+        height="76"
+      >
+    </div>
+
+    <div>
+      <p class="assinatura">RENOVA-ME DEUS MEU</p>
+      <h1>Minhas Devocionais</h1>
+    </div>
+
+  </header>
+
+  <main class="app">
+
+    <section class="leitor">
+
+      <div class="controles-fonte">
+
+        <button
+          type="button"
+          id="diminuir"
+          aria-label="Diminuir tamanho da letra"
+        >
+          A−
+        </button>
+
+        <span>Tamanho da letra</span>
+
+        <button
+          type="button"
+          id="aumentar"
+          aria-label="Aumentar tamanho da letra"
+        >
+          A+
+        </button>
+
+      </div>
+
+      <article class="texto" id="textoDevocional">
+
+        <p id="numero" class="numero">
+          DEVOCIONAL
+        </p>
+
+        <h2 id="titulo-devocional">
+          Carregando sua devocional...
+        </h2>
+
+        <p id="rotulo-dia" class="rotulo-dia">
+          Sua leitura de hoje
+        </p>
+
+        <p id="referencia" class="referencia"></p>
+
+        <div id="conteudo" class="conteudo">
+        </div>
+
+        <p id="aviso" class="aviso" aria-live="polite"></p>
+
+      </article>
+
+      <nav class="navegacao" aria-label="Navegação das devocionais">
+
+        <button
+          type="button"
+          id="anterior"
+        >
+          ← Anterior
+        </button>
+
+        <button
+          type="button"
+          id="hoje"
+          hidden
+        >
+          Hoje
+        </button>
+
+        <button
+          type="button"
+          id="proxima"
+        >
+          Próxima →
+        </button>
+
+      </nav>
+
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+
+    <p>Renova-me Deus Meu</p>
+
+    <p>
+      Uma mensagem para fortalecer sua caminhada com Deus.
+    </p>
+
+  </footer>
+
+  <!-- JavaScript principal -->
+  <script src="./script.js"></script>
+
+</body>
+</html>
+

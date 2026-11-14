@@ -1,0 +1,58 @@
+MINHAS DEVOCIONAIS — PROJETO PREPARADO PARA O VS CODE
+
+ESTRUTURA DOS DADOS
+Os 28 arquivos JSON estão no local esperado pelo aplicativo:
+Dados_JSON/DevocionaisJSON/
+
+COMO COMEÇAR
+1. Extraia o ZIP no computador.
+2. Abra a pasta Minhas-Devocionais no VS Code.
+3. Instale/ative a extensão Live Server, se ainda não estiver instalada.
+4. Clique com o botão direito em index.html e escolha "Open with Live Server".
+5. Confira se a lista carrega e abra algumas devocionais.
+6. Não abra index.html com duplo clique: o navegador precisa de um servidor local para carregar os arquivos JSON.
+
+PUBLICAÇÃO
+1. Crie um repositório público novo no GitHub, separado do repositório do app Renova-me.
+2. Envie o conteúdo desta pasta para a raiz do repositório.
+3. Ative GitHub Pages nas configurações do repositório.
+4. Depois de publicado, teste no celular antes de instalar.
+
+DADOS RECEBIDOS NESTE ZIP
+- 28 arquivos JSON presentes e válidos.
+- 552 registros encontrados.
+- Não foram encontrados os registros de número: 65, 67, 68, 69, 71, 77, 189 e 536.
+- Esses oito textos não foram recriados nem inventados. Para completar os 560, será necessário recuperá-los da fonte original do projeto Renova-me e acrescentá-los aos arquivos correspondentes.
+
+APLICATIVO
+- Projeto independente: não altera o aplicativo Renova-me original.
+- A sequência diária está configurada para começar em 02/11/2026, alinhada ao app principal.
+- A lista é organizada pelo número da devocional e coloca a devocional do dia no início.
+- As letras podem ser aumentadas ou diminuídas durante a leitura.
+- O service worker guarda os arquivos JSON quando são carregados com sucesso. Como o aplicativo solicita os 28 arquivos ao abrir a lista, mantenha a conexão ativa até o carregamento terminar para preparar o uso offline.
+- Os ícones atuais são provisórios e poderão ser substituídos pela identidade visual oficial.
+
+IMPORTANTE
+Não faça alterações no projeto principal Renova-me para trabalhar neste aplicativo. Mantenha os dois projetos em pastas e repositórios separados.
+
+
+COMO FUNCIONA A LEITURA
+- Ao abrir o aplicativo, aparece somente uma devocional: a correspondente ao dia.
+- Use "Anterior" para ler a devocional anterior e "Próxima" para avançar.
+- O botão "Voltar para hoje" retorna à leitura do dia.
+- As setas param no primeiro e no último texto disponível; não há repetição automática.
+- Os 552 textos existentes são mantidos, em ordem numérica. Não há lista completa na tela inicial.
+
+
+INSTALAÇÃO NO CELULAR — CONFIGURAÇÃO PWA
+- O manifesto contém ícones 192x192 e 512x512 para navegadores Android.
+- O iPhone recebe um ícone Apple Touch de 180x180 e metadados próprios do Safari.
+- A identidade do ícone usa a marca Renova-me Deus Meu extraída da capa.
+- A capa completa está em imagens/capa-devocionais.png; ela é uma imagem de capa, diferente do ícone quadrado do aplicativo.
+- O service worker foi atualizado para guardar os ícones, a capa e a estrutura do aplicativo.
+
+IMPORTANTE PARA INSTALAR
+- O site precisa estar publicado em HTTPS (por exemplo, GitHub Pages) para instalação em celulares. Live Server serve para testes locais no computador, mas não substitui a publicação HTTPS.
+- Android: abrir o endereço publicado no Chrome e usar "Instalar app" ou "Adicionar à tela inicial", conforme a opção oferecida.
+- iPhone: abrir o endereço publicado no Safari, tocar em Compartilhar > Adicionar à Tela de Início; ativar "Abrir como App da Web" se a opção aparecer.
+- A instalação depende do navegador e do dispositivo; por isso, a confirmação final será feita depois da publicação HTTPS em um Android e em um iPhone.
