@@ -284,3 +284,52 @@ button:focus-visible {
   }
   .texto { padding: 22px 16px; }
 }
+
+/* Créditos e acesso ao site Renova-me Deus Meu */
+.credits {
+  margin: 14px auto 10px;
+  max-width: 560px;
+  color: var(--azul);
+}
+
+.credits summary {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 9px 16px;
+  border: 2px solid var(--azul);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.credits p {
+  margin: 12px auto;
+  max-width: 560px;
+  color: var(--cinza);
+  font-size: .88rem;
+  line-height: 1.5;
+}
+
+.site-button {
+  display: inline-block;
+  margin: 8px auto 2px;
+  padding: 10px 16px;
+  border: 2px solid var(--azul);
+  border-radius: 10px;
+  background: var(--azul);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-button:hover,
+.site-button:focus-visible {
+  background: #1b2d56;
+  color: #fff;
+}
+
+.site-button:focus-visible,
+.credits summary:focus-visible {
+  outline: 4px solid #777;
+  outline-offset: 3px;
+}
